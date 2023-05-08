@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Lucida Sans Unicode;
+	text-decoration: none;
+}
+
+body {
+	background-color: white;
+}
+
+/*Header*/
+.my_header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 10%;
+	background-color: white;
+}
+
+/*The logotype*/
+.logotype {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.logotype img {
+	height: 250px;
+	width: 350px;
+}
+
+.new_font {
+	margin-top: -40px;
+	font-family: 'Marck Script', cursive;
+	color: dimgrey;
+	font-size: 42px;
+	text-shadow: 5px 0px 5px grey;
+	text-shadow: 10px 0px 10px lightpink;
+}
+
+/*The Navigation panel*/
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.navigation li {
+	margin: 0px 15px;
+}
+
+.navigation li a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background-color: lightpink;
+	border-radius: 30px;
+	padding: 15px;
+	transition: 0.2s;
+	font-size: 1.3em;
+}
+
+.navigation li a:hover {
+	background-color: black;
+	color: white;
+}
+
+
+/*The main part. The Banner*/
+.catalog_container {
+	max-width: 100%;
+	width: 80%;
+	height: auto;
+	background-color: whitesmoke;
+	margin: 50px auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	box-shadow: 0px 0px 5px black;
+	border-radius: 15px;
+}
+
+.catalog_container h1 {
+	text-align: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.catalog_items {
+	background: whitesmoke;
+	margin: 50px 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex:1 1 100px;
+	flex-wrap: wrap;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	gap: 1em;
+}
+
+.item {
+	width: calc((100% / 5) - 1em);
+	height: 350px;
+	border-radius: 15px;
+	background: white;
+	box-shadow: 0px 0px 5px black;
+	transition: 0.8s;
+	position: relative;
+}
+
+.item6 {
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	border-radius: 15px;
+}
+
+.item h2 {
+	text-align: center;
+	margin: 0px 0px;
+	position: absolute;
+	width: 80%;
+	top: 45%;
+	left: 0px;
+	right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: black 3px solid;
+	border-radius: 30px;
+	transition: 0.8s;
+}
+
+.item a {
+	color: black;
+	display: block;
+	transition: 0.8s;
+}
+
+.item:hover {
+	background: lightpink;
+}
+
+.item1:hover {
+	background: lightblue;
+}
+
+.item2:hover {
+	background: steelblue;
+}
+
+.item3:hover {
+	background: dimgrey;
+}
+
+.item4:hover {
+	background: palevioletred;
+}
+
+.item5:hover {
+	background: peachpuff;
+}
+
+.item6:hover {
+	animation-name: gender;  
+}
+
+@keyframes gender {
+  0% {
+    background: pink;
+  }
+  25% {
+	background: blue;
+  }
+  50% {
+    background: pink;
+  }
+  75% {
+    background: blue;
+  }
+  100% {
+    background: pink;
+  }
+}
+
+.item7:hover {
+	background: silver;
+}
+
+.item8:hover {
+	background: dimgrey;
+}
+
+.item9:hover {
+	background: yellow;
+}
+
+.item10:hover {
+	background: cornflowerblue;
+}
+
+.item:hover h2 {
+	border: white 3px solid;
+	color: white;
+}
+
+.item:hover a {
+	color: white;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0px;
+}
+
+/*Social media icons*/
+.social a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 90px;
+	height: 90px;
+	margin: 0 10px;
+	font-size: 50px;
+	background: white;
+	color: black;
+	transition: 0.4s;
+	border-radius: 30%;
+}
+
+.social a:nth-child(1):hover {
+	color: #833AB4;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+.social a:nth-child(2):hover {
+	color: #E60023;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+.social a:nth-child(3):hover {
+	color: #7360F2;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+
+.social a:nth-child(4):hover {
+	color: #27A7E7;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+.social a:nth-child(5):hover {
+	color: #5FFC7B;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+
+/*Contacts*/
+.contacts {
+	text-align: center;
+	max-width: 80%;
+	margin: 0px auto;
+	margin-bottom: 50px;
+}
+
+.contacts h2:first-of-type {
+	margin-bottom: 50px;
+}
+
+.contacts_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contact_item {
+	width: calc(33% - 20px);
+	height: 150px;
+	background: dimgrey;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.contacts_container div:hover {
+	/*background: #48dbfb;*/
+	background: black;
+}
+
+.contacts_container div i {
+	font-size: 40px;
+	color: white;
+}
+
+.contacts_container div a {
+	text-decoration: none;
+	color: white;	
+	font-size: 18px;
+}
+
+/*The map*/
+iframe {
+	width: 100%;
+	border-radius: 5px;
+}
+
+/*Media queries*/
+@media (max-width: 1440px) {
+	.contact_item {
+	width: 100%;
+	}
+	.my_header {
+		flex-direction: column;
+	}
+	.navigation {
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+	.item {
+	width: calc((100% / 4) - 1em);
+	height: 350px;
+	}
+
+@media (max-width: 1024px) {
+	.contact_item {
+	width: 100%;
+	}
+	.my_header {
+	padding: 10px 3%;
+	}
+	.navigation {
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+	.item {
+	width: calc((100% / 3) - 1em);
+	height: 320px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact_item {
+	width: 100%;
+	}
+	.my_header {
+		flex-direction: column;
+	}
+	.navigation{
+		width: 100%;
+		align-content: center;	
+	}
+	.navigation li{
+		width: 100%;
+	}
+	.navigation li a{
+		width: 100%;
+		text-align: center;
+	}
+	.new_font {
+	text-align: center;
+	}
+	.item {
+	width: calc((100% / 2) - 10%);
+	height: 300px;
+	}
+
+}
+
+@media (max-width:  425px) {
+	.my_header {
+	padding: 0px;
+	}
+	.logotype img {
+	height: 200px;
+	width: 300px;
+	}
+	.navigation {
+	flex-direction: column;
+	text-align: center;
+	margin: 10px auto;
+	}
+	.footer_info h3 {
+		text-align: center;
+	}
+	.item {
+	width: 70%;
+	height: 300px;
+	}
+}
+
+@media (max-width: 320px) {
+	.item {
+	width: 80%;
+	height: 250px;
+	}
+}
