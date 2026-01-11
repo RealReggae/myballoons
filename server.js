@@ -16,7 +16,7 @@ const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const TG_API = `https://api.telegram.org/bot${TOKEN}`;
 
 app.use(express.json());
-app.use(cors( {origin: "myballoons.by "} ));
+app.use(cors( {origin: "https://test.myballoons.by" } ));
 app.use("/public", express.static("public"));
 
 app.get("/api", (req, res) => {
@@ -103,4 +103,5 @@ app.put("/:id", (req,res) => {
 
 app.listen(PORT, () => {
     console.log(`I'm on port: ${PORT}`)
+
 });
